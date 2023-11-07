@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import PostDetails from '@/app/components/postDetails'
+import Deatils from '@/app/components/Deatils'
 const page = async({params}) => {
   const id =params.postId
 
@@ -15,7 +15,7 @@ const page = async({params}) => {
     <div className='posts'>
        <h1>list of posts</h1>
       <Suspense fallback={loading}>
-        <PostDetails id={id}/>
+        <Deatils id={id}/>
       </Suspense>
     </div>
   )
