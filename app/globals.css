@@ -87,12 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
 }
 
 a {
@@ -104,4 +99,37 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+.nav{
+  background-color: #fff;
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid lightblue
+}
+.menu a{
+  padding-left: 10px;
+}
+
+.posts{
+   padding:100px;
+}
+
+.posts .item{
+  padding: 20px;
+  margin-bottom: 30px;
+  border:1px solid lightgray;
+  
+}
+
+.posts .item h3{
+   text-transform: capitalize;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.posts .item p{
+  
 }
